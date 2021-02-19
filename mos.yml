@@ -3,6 +3,8 @@ type: lib
 description: Arduino Adafruit TCS34725 library
 version: 1.0
 
+platforms: [ esp32 ]
+
 sources:
   - src
 libs:
