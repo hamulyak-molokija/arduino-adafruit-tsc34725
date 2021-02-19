@@ -5,7 +5,6 @@ version: 1.0
 
 sources:
   - src
-config_schema:
 libs:
   - origin: https://github.com/mongoose-os-libs/arduino-compat
   - origin: https://github.com/mongoose-os-libs/arduino-wire
