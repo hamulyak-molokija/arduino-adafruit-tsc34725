@@ -42,17 +42,17 @@ void mgos_TCS34725_getRawDataOneShot(Adafruit_TCS34725 *ads, uint16_t *r, uint16
 }
 
 uint16_t mgos_TCS34725_calculateColorTemperature(Adafruit_TCS34725 *ads, uint16_t r, uint16_t g, uint16_t b) {
-  if (ads == nullptr) return;
+  if (ads == nullptr) return 0;
   return ads->calculateColorTemperature(r, g, b);
 }
 
 uint16_t mgos_TCS34725_calculateColorTemperature_dn40(Adafruit_TCS34725 *ads, uint16_t r, uint16_t g, uint16_t b, uint16_t c) {
-  if (ads == nullptr) return;
+  if (ads == nullptr) return 0;
   return ads->calculateColorTemperature_dn40(r, g, b, c);
 }
 
 uint16_t mgos_TCS34725_calculateLux(Adafruit_TCS34725 *ads, uint16_t r, uint16_t g, uint16_t b) {
-  if (ads == nullptr) return;
+  if (ads == nullptr) return 0;
   return ads->calculateLux(r, g, b);
 }
 
@@ -62,12 +62,12 @@ void mgos_TCS34725_write8(Adafruit_TCS34725 *ads, uint8_t reg, uint32_t value) {
 }
 
 uint8_t mgos_TCS34725_read8(Adafruit_TCS34725 *ads, uint8_t reg) {
-  if (ads == nullptr) return;
+  if (ads == nullptr) return 0;
   return ads->read8(reg);
 }
 
 uint8_t mgos_TCS34725_read16(Adafruit_TCS34725 *ads, uint8_t reg) {
-  if (ads == nullptr) return;
+  if (ads == nullptr) return 0;
   return ads->read16(reg);
 }
 
